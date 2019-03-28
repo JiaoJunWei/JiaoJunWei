@@ -10,24 +10,58 @@
     
 
     
-    <title>Page not found</title>
+    <title>Guides</title>
 
     
     
 
 
 
+  
+  
+  <meta name="author" content="Author Name" />
+  <meta name="description" content="Guides Content Editing Add image to article This is an AMP page, to add image, you have to use amp-img shortcodes, the syntax is:
+  Replace width-value, height-value, image alt and image-url by your image.
+Note: Hugo is static-site-generator, to add image to your site, please follow this solution [SOlved] How to… insert image in my post?
+Content config for SEO In Front Matter section for each post, you should add title and description for SEO, example:
+--- title: &amp;quot;Getting Started with AMP&amp;quot; description: &amp;quot;Getting started with AMP. Implement these key steps to get up and running with AMP&amp;quot; ---  The title is the H1 tag on HTML page, and &amp;lt;title&amp;gt; in head section.
+The description is the meta tag for description &amp;lt;meta name=&amp;quot;description&amp;quot; content=&amp;quot;&amp;quot;&amp;gt; in head section.
+Add icon I changed from icon font to SVG for website follow SVG symbol a Good Choice for Icons. Here&amp;rsquo;s steps to add SVG icon to website.
+ Get SVG code (Eg: https://iconsvg.xyz/ or https://simpleicons.org/)
+&amp;lt;svg xmlns=&amp;quot;http://www.w3.org/2000/svg&amp;quot; style=&amp;quot;display: none;&amp;quot; preserveAspectRatio=&amp;quot;xMidYMid meet&amp;quot;&amp;gt; &amp;lt;symbol id=&amp;quot;icon-rss&amp;quot; viewBox=&amp;quot;0 0 24 24&amp;quot;&amp;gt; &amp;lt;title&amp;gt;RSS&amp;lt;/title&amp;gt; &amp;lt;path d=&amp;quot;M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z&amp;quot; /&amp;gt; &amp;lt;/symbol&amp;gt; &amp;lt;/svg&amp;gt;  Replace SVG symbol id by yourself (above is icon-rss)
+ Add this code into layouts/partials/svg-icons.html
+ Call icon name by SVG symbol id at you define above follow this syntax:
+&amp;lt;svg fill=&amp;quot;currentColor&amp;quot;&amp;gt;&amp;lt;use xlink:href=&amp;quot;#icon-rss&amp;quot; /&amp;gt;&amp;lt;/svg&amp;gt;   Example for icon on layouts/partials/social.html
+Customize Theme Use yarn to install and run script instead of npm, some people got problem when using npm (but not with yarn)
+ Install packages by yarn install Run watch script to hot reload your change yarn watch  Site Configuration Take a look at exampleSite - config.toml, and replace config value by your own:
+Site Info # Base config for your site baseURL = &amp;quot;http://localhost:1313/&amp;quot; # Your domain languageCode = &amp;quot;en-us&amp;quot; title = &amp;quot;Hugo LAMP&amp;quot; # Default site title theme = &amp;quot;hugo-lamp&amp;quot; googleAnalytics = &amp;quot;UA-XXXXXXXX-X&amp;quot; # Google Analytics UA number  Main Menu [[menu.main]] name = &amp;quot;Hugo&amp;quot; weight = 1 identifier = &amp;quot;hugo&amp;quot; url = &amp;quot;/hugo/&amp;quot; [[menu.main]] name = &amp;quot;AMP Project&amp;quot; weight = 2 identifier = &amp;quot;amp&amp;quot; url = &amp;quot;/amp/&amp;quot; [[menu.main]] name = &amp;quot;Tags&amp;quot; weight = 3 identifier = &amp;quot;tags&amp;quot; url = &amp;quot;/tags/&amp;quot;  Taxonomies For more details, take a look on official document for taxonomies
+[taxonomies] tag = &amp;quot;tags&amp;quot; category = &amp;quot;categories&amp;quot;  SEO [params] subtitle = &amp;quot;Light responsive AMP theme&amp;quot; author = &amp;quot;Huy Nguyen&amp;quot; # Your name logo = &amp;quot;/img/avatar.jpg&amp;quot; # Logo description = &amp;quot;A light responsive Hugo AMP theme for blogger&amp;quot; # Meta description tag paginate = 10 # SEO configs seotitle = &amp;quot;Hugo Blog Title (SEO Version)&amp;quot; # Overwrite site title for SEO purpose googleSiteVerification = &amp;quot;google_site_verification_code&amp;quot; # Google Webmaster msValidate = &amp;quot;bing_site_verification_code&amp;quot; # Bing Webmaster  Publisher Currently only support Google Adsense as usual, maybe implement amp-auto-ads for future.
+# Google Adsense adsensePublisher = &amp;quot;ca-pub-XXX&amp;quot; # Required if you want to include Google Adsense adsenseSlot = &amp;quot;XXX&amp;quot; # Required slot to display ads adsenseSlotSticky = &amp;quot;XXX&amp;quot; # Enables sticky ads feature, value maybe the same with adsenseSlot, remove if you don&#39;t want display sticky ads  Social Networks &amp;amp; Connections # Social networks email = &amp;quot;name@domain.com&amp;quot; github = &amp;quot;github_username&amp;quot; twitter = &amp;quot;twitter_username&amp;quot; linkedin = &amp;quot;linkedin_username&amp;quot; facebook = &amp;quot;facebook_username&amp;quot; google = &amp;quot;googleplus_id_number&amp;quot; instagram = &amp;quot;instagram_username&amp;quot; youtube = &amp;quot;youtube_username&amp;quot; dribbble = &amp;quot;dribbble_username&amp;quot; ">
 
   
-  <meta name="author" content="" />
-  <meta name="description" content="" />
-
   
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:site" content="@gohugoio" />
-  <meta name="twitter:title" content="JiaoJunWei&#39;s BLOG" />
-  <meta name="twitter:description" content="" />
-  <meta name="twitter:image" content="https://jiaojunwei.github.io/img/avatar.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@gohugoio" />
+    <meta name="twitter:title" content="Guides" />
+    <meta name="twitter:description" content="Guides Content Editing Add image to article This is an AMP page, to add image, you have to use amp-img shortcodes, the syntax is:
+  Replace width-value, height-value, image alt and image-url by your image.
+Note: Hugo is static-site-generator, to add image to your site, please follow this solution [SOlved] How to… insert image in my post?
+Content config for SEO In Front Matter section for each post, you should add title and description for SEO, example:
+--- title: &amp;quot;Getting Started with AMP&amp;quot; description: &amp;quot;Getting started with AMP. Implement these key steps to get up and running with AMP&amp;quot; ---  The title is the H1 tag on HTML page, and &amp;lt;title&amp;gt; in head section.
+The description is the meta tag for description &amp;lt;meta name=&amp;quot;description&amp;quot; content=&amp;quot;&amp;quot;&amp;gt; in head section.
+Add icon I changed from icon font to SVG for website follow SVG symbol a Good Choice for Icons. Here&amp;rsquo;s steps to add SVG icon to website.
+ Get SVG code (Eg: https://iconsvg.xyz/ or https://simpleicons.org/)
+&amp;lt;svg xmlns=&amp;quot;http://www.w3.org/2000/svg&amp;quot; style=&amp;quot;display: none;&amp;quot; preserveAspectRatio=&amp;quot;xMidYMid meet&amp;quot;&amp;gt; &amp;lt;symbol id=&amp;quot;icon-rss&amp;quot; viewBox=&amp;quot;0 0 24 24&amp;quot;&amp;gt; &amp;lt;title&amp;gt;RSS&amp;lt;/title&amp;gt; &amp;lt;path d=&amp;quot;M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z&amp;quot; /&amp;gt; &amp;lt;/symbol&amp;gt; &amp;lt;/svg&amp;gt;  Replace SVG symbol id by yourself (above is icon-rss)
+ Add this code into layouts/partials/svg-icons.html
+ Call icon name by SVG symbol id at you define above follow this syntax:
+&amp;lt;svg fill=&amp;quot;currentColor&amp;quot;&amp;gt;&amp;lt;use xlink:href=&amp;quot;#icon-rss&amp;quot; /&amp;gt;&amp;lt;/svg&amp;gt;   Example for icon on layouts/partials/social.html
+Customize Theme Use yarn to install and run script instead of npm, some people got problem when using npm (but not with yarn)
+ Install packages by yarn install Run watch script to hot reload your change yarn watch  Site Configuration Take a look at exampleSite - config.toml, and replace config value by your own:
+Site Info # Base config for your site baseURL = &amp;quot;http://localhost:1313/&amp;quot; # Your domain languageCode = &amp;quot;en-us&amp;quot; title = &amp;quot;Hugo LAMP&amp;quot; # Default site title theme = &amp;quot;hugo-lamp&amp;quot; googleAnalytics = &amp;quot;UA-XXXXXXXX-X&amp;quot; # Google Analytics UA number  Main Menu [[menu.main]] name = &amp;quot;Hugo&amp;quot; weight = 1 identifier = &amp;quot;hugo&amp;quot; url = &amp;quot;/hugo/&amp;quot; [[menu.main]] name = &amp;quot;AMP Project&amp;quot; weight = 2 identifier = &amp;quot;amp&amp;quot; url = &amp;quot;/amp/&amp;quot; [[menu.main]] name = &amp;quot;Tags&amp;quot; weight = 3 identifier = &amp;quot;tags&amp;quot; url = &amp;quot;/tags/&amp;quot;  Taxonomies For more details, take a look on official document for taxonomies
+[taxonomies] tag = &amp;quot;tags&amp;quot; category = &amp;quot;categories&amp;quot;  SEO [params] subtitle = &amp;quot;Light responsive AMP theme&amp;quot; author = &amp;quot;Huy Nguyen&amp;quot; # Your name logo = &amp;quot;/img/avatar.jpg&amp;quot; # Logo description = &amp;quot;A light responsive Hugo AMP theme for blogger&amp;quot; # Meta description tag paginate = 10 # SEO configs seotitle = &amp;quot;Hugo Blog Title (SEO Version)&amp;quot; # Overwrite site title for SEO purpose googleSiteVerification = &amp;quot;google_site_verification_code&amp;quot; # Google Webmaster msValidate = &amp;quot;bing_site_verification_code&amp;quot; # Bing Webmaster  Publisher Currently only support Google Adsense as usual, maybe implement amp-auto-ads for future.
+# Google Adsense adsensePublisher = &amp;quot;ca-pub-XXX&amp;quot; # Required if you want to include Google Adsense adsenseSlot = &amp;quot;XXX&amp;quot; # Required slot to display ads adsenseSlotSticky = &amp;quot;XXX&amp;quot; # Enables sticky ads feature, value maybe the same with adsenseSlot, remove if you don&#39;t want display sticky ads  Social Networks &amp;amp; Connections # Social networks email = &amp;quot;name@domain.com&amp;quot; github = &amp;quot;github_username&amp;quot; twitter = &amp;quot;twitter_username&amp;quot; linkedin = &amp;quot;linkedin_username&amp;quot; facebook = &amp;quot;facebook_username&amp;quot; google = &amp;quot;googleplus_id_number&amp;quot; instagram = &amp;quot;instagram_username&amp;quot; youtube = &amp;quot;youtube_username&amp;quot; dribbble = &amp;quot;dribbble_username&amp;quot; " />
+    <meta name="twitter:image" content="https://jiaojunwei.github.io/img/cover.jpg" />
+  
 
 
 
@@ -35,7 +69,7 @@
 <meta name="generator" content="Hugo 0.54.0">
 
 
-<link rel="canonical" href="">
+<link rel="canonical" href="https://jiaojunwei.github.io/post/guide/">
 <link rel="alternative" href="/index.xml" title="JiaoJunWei&#39;s BLOG" type="application/atom+xml">
 
 
@@ -149,11 +183,256 @@
 </amp-sidebar>
 
     
-  <div class="not-found">
-    <h1 class="error-emoji">\(o_o)/</h1>
-    <p class="error-text">/* 404 page not found. */</p>
-    <p><a class="error-link" href="/" title="404 Page not found">↑ Back Home ↑</a></p>
-  </div>
+  <header class="header">
+  <amp-img alt="JiaoJunWei&#39;s BLOG"
+    width="128px"
+    height="128px"
+    class="logo"
+    src=""
+    sizes="(max-width: 800px) 36px, 128px">
+  </amp-img>
+  
+    <h2 class="title"><a href="https://jiaojunwei.github.io" title="JiaoJunWei&#39;s BLOG">JiaoJunWei&#39;s BLOG</a></h2>
+  
+  <p class="subtitle"></p>
+  <button class="menu-toggle" type="button" on="tap:sidebar.open">
+    <span class="icon icon-menu"></span>
+  </button>
+
+  
+  <nav class="menu">
+    <ul class="menu-list">
+      
+      
+      
+      
+    </ul>
+  </nav>
+
+  <ul class="social-list">
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  <li class="social-item">
+    <a href="/index.xml" title="RSS">
+      <svg class="icon" fill="currentColor"><use xlink:href="#icon-rss" /></svg>
+    </a>
+  </li>
+</ul>
+
+</header>
+
+  <section class="main post-detail">
+    <header class="post-header">
+      <h1 class="post-title">Guides</h1>
+      <p class="entry-meta"><span class="entry-time">Mar 28, 2019</span> 3 min read</p>
+    </header>
+    
+
+    <article class="post-content"><h1 id="guides">Guides</h1>
+
+<h2 id="content-editing">Content Editing</h2>
+
+<h3 id="add-image-to-article">Add image to article</h3>
+
+<p>This is an AMP page, to add image, you have to use <a href="https://github.com/huyb1991/hugo-lamp/blob/master/layouts/shortcodes/amp-img.html">amp-img shortcodes</a>, the syntax is:</p>
+
+<pre><code><amp-img
+  src="image-url"
+  alt="image alt "
+  
+  
+  width="width-value"
+  height="height-value"
+  layout="responsive">
+</amp-img>
+
+</code></pre>
+
+<p>Replace <code>width-value</code>, <code>height-value</code>, <code>image alt</code> and <code>image-url</code> by your image.</p>
+
+<p>Note: Hugo is static-site-generator, to add image to your site, please follow this solution <a href="https://discourse.gohugo.io/t/solved-how-to-insert-image-in-my-post/1473">[SOlved] How to… insert image in my post?</a></p>
+
+<h3 id="content-config-for-seo">Content config for SEO</h3>
+
+<p>In Front Matter section for each post, you should add <code>title</code> and <code>description</code> for SEO, example:</p>
+
+<pre><code>---
+title: &quot;Getting Started with AMP&quot;
+description: &quot;Getting started with AMP. Implement these key steps to get up and running with AMP&quot;
+---
+</code></pre>
+
+<p>The <code>title</code> is the H1 tag on HTML page, and <code>&lt;title&gt;</code> in head section.</p>
+
+<p>The <code>description</code> is the meta tag for description <code>&lt;meta name=&quot;description&quot; content=&quot;&quot;&gt;</code> in head section.</p>
+
+<h3 id="add-icon">Add icon</h3>
+
+<p>I changed from icon font to SVG for website follow <a href="https://css-tricks.com/svg-symbol-good-choice-icons/">SVG symbol a Good Choice for Icons</a>. Here&rsquo;s steps to add SVG icon to website.</p>
+
+<ol>
+<li><p>Get SVG code (Eg: <a href="https://iconsvg.xyz/">https://iconsvg.xyz/</a> or <a href="https://simpleicons.org/">https://simpleicons.org/</a>)</p>
+
+<pre><code>&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; style=&quot;display: none;&quot; preserveAspectRatio=&quot;xMidYMid meet&quot;&gt;
+&lt;symbol id=&quot;icon-rss&quot; viewBox=&quot;0 0 24 24&quot;&gt;
+&lt;title&gt;RSS&lt;/title&gt;
+&lt;path d=&quot;M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z&quot; /&gt;
+&lt;/symbol&gt;
+&lt;/svg&gt;
+</code></pre>
+
+<p>Replace <code>SVG symbol id</code> by yourself (above is <code>icon-rss</code>)</p></li>
+
+<li><p>Add this code into <a href="https://github.com/huyb1991/hugo-lamp/blob/master/layouts/partials/svg-icons.html">layouts/partials/svg-icons.html</a></p></li>
+
+<li><p>Call icon name by <code>SVG symbol id</code> at you define above follow this syntax:</p>
+
+<pre><code class="language-html">&lt;svg fill=&quot;currentColor&quot;&gt;&lt;use xlink:href=&quot;#icon-rss&quot; /&gt;&lt;/svg&gt;
+</code></pre></li>
+</ol>
+
+<p>Example for icon on <a href="https://github.com/huyb1991/hugo-lamp/blob/master/layouts/partials/social.html">layouts/partials/social.html</a></p>
+
+<h3 id="customize-theme">Customize Theme</h3>
+
+<p>Use <a href="https://yarnpkg.com/en/">yarn</a> to install and run script instead of <code>npm</code>, some people got problem when using <code>npm</code> (but not with <code>yarn</code>)</p>
+
+<ol>
+<li>Install packages by <code>yarn install</code></li>
+<li>Run watch script to hot reload your change <code>yarn watch</code></li>
+</ol>
+
+<h2 id="site-configuration">Site Configuration</h2>
+
+<p>Take a look at <a href="https://github.com/huyb1991/hugo-lamp/blob/master/exampleSite/config.toml">exampleSite - config.toml</a>, and replace config value by your own:</p>
+
+<h3 id="site-info">Site Info</h3>
+
+<pre><code class="language-toml"># Base config for your site
+baseURL = &quot;http://localhost:1313/&quot;      # Your domain
+languageCode = &quot;en-us&quot;
+title = &quot;Hugo LAMP&quot;                     # Default site title
+theme = &quot;hugo-lamp&quot;
+googleAnalytics = &quot;UA-XXXXXXXX-X&quot;       # Google Analytics UA number
+</code></pre>
+
+<h3 id="main-menu">Main Menu</h3>
+
+<pre><code class="language-toml">[[menu.main]]
+  name = &quot;Hugo&quot;
+  weight = 1
+  identifier = &quot;hugo&quot;
+  url = &quot;/hugo/&quot;
+[[menu.main]]
+  name = &quot;AMP Project&quot;
+  weight = 2
+  identifier = &quot;amp&quot;
+  url = &quot;/amp/&quot;
+[[menu.main]]
+  name = &quot;Tags&quot;
+  weight = 3
+  identifier = &quot;tags&quot;
+  url = &quot;/tags/&quot;
+</code></pre>
+
+<h3 id="taxonomies">Taxonomies</h3>
+
+<p>For more details, take a look on official document for <a href="https://gohugo.io/content-management/taxonomies/">taxonomies</a></p>
+
+<pre><code class="language-toml">[taxonomies]
+  tag = &quot;tags&quot;
+  category = &quot;categories&quot;
+</code></pre>
+
+<h3 id="seo">SEO</h3>
+
+<pre><code class="language-toml">[params]
+  subtitle = &quot;Light responsive AMP theme&quot;
+  author = &quot;Huy Nguyen&quot;                     # Your name
+  logo = &quot;/img/avatar.jpg&quot;                  # Logo
+  description = &quot;A light responsive Hugo AMP theme for blogger&quot;          # Meta description tag
+  paginate = 10
+
+  # SEO configs
+  seotitle = &quot;Hugo Blog Title (SEO Version)&quot;                  # Overwrite site title for SEO purpose
+  googleSiteVerification = &quot;google_site_verification_code&quot;    # Google Webmaster
+  msValidate = &quot;bing_site_verification_code&quot;                  # Bing Webmaster
+</code></pre>
+
+<h3 id="publisher">Publisher</h3>
+
+<p>Currently only support Google Adsense as usual, maybe implement <a href="https://www.ampproject.org/docs/reference/components/amp-auto-ads">amp-auto-ads</a> for future.</p>
+
+<pre><code class="language-toml">  # Google Adsense
+  adsensePublisher = &quot;ca-pub-XXX&quot;       # Required if you want to include Google Adsense
+  adsenseSlot = &quot;XXX&quot;                   # Required slot to display ads
+  adsenseSlotSticky = &quot;XXX&quot;             # Enables sticky ads feature, value maybe the same with adsenseSlot, remove if you don't want display sticky ads
+</code></pre>
+
+<h3 id="social-networks-connections">Social Networks &amp; Connections</h3>
+
+<pre><code class="language-toml">  # Social networks
+  email = &quot;name@domain.com&quot;
+  github = &quot;github_username&quot;
+  twitter = &quot;twitter_username&quot;
+  linkedin = &quot;linkedin_username&quot;
+  facebook = &quot;facebook_username&quot;
+  google = &quot;googleplus_id_number&quot;
+  instagram = &quot;instagram_username&quot;
+  youtube = &quot;youtube_username&quot;
+  dribbble = &quot;dribbble_username&quot;
+</code></pre>
+
+<p>The remaining content of your post.</p></article>
+    <footer class="post-footer">
+      
+      <ul class="post-tags">
+        
+          <li class="post-tag"><a href="/tags/taga"><span class="tag">TagA</span></a></li>
+        
+          <li class="post-tag"><a href="/tags/tagb"><span class="tag">TagB</span></a></li>
+        
+      </ul>
+      
+      <div class="sharing">
+        <a class="share share-facebook" target="_blank" href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fjiaojunwei.github.io%2fpost%2fguide%2f" title="Share on Facebook">
+          <svg class="icon icon-facebook" fill="currentColor"><use xlink:href="#icon-facebook" /></svg>
+        </a>
+        <a class="share share-twitter" target="_blank" href="https://twitter.com/intent/tweet/?text=Guides&amp;url=https%3a%2f%2fjiaojunwei.github.io%2fpost%2fguide%2f" title="Share on Twitter">
+          <svg class="icon icon-twitter" fill="currentColor"><use xlink:href="#icon-twitter" /></svg>
+        </a>
+        <a class="share share-google" target="_blank" href="https://plus.google.com/share?url=Guides&amp;url=https%3a%2f%2fjiaojunwei.github.io%2fpost%2fguide%2f" title="Share on Google+">
+          <svg class="icon icon-google" fill="currentColor"><use xlink:href="#icon-googleplus" /></svg>
+        </a>
+      </div>
+    </footer>
+  </section>
+  <footer class="footer">
+  <p>Copyright © 2018-2019 JiaoJunWei&#39;s BLOG</p>
+  <p>Powered by <a href="https://gohugo.io/" target="_blank">Hugo</a> with theme <a href="https://github.com/huyb1991/hugo-lamp" title="Hugo LAMP" target="_blank">LAMP</a>.</p>
+</footer>
+
+
+
+
+
+
 
   </body>
 </html>

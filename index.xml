@@ -2,21 +2,192 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>JiaoJunWei&#39;s BLOG</title>
-    <link>http://example.org/</link>
+    <link>https://jiaojunwei.github.io/</link>
     <description>Recent content on JiaoJunWei&#39;s BLOG</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 28 Mar 2019 16:34:59 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 28 Mar 2019 18:49:55 +0800</lastBuildDate>
     
-	<atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://jiaojunwei.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>Guides</title>
+      <link>https://jiaojunwei.github.io/post/guide/</link>
+      <pubDate>Thu, 28 Mar 2019 18:49:55 +0800</pubDate>
+      
+      <guid>https://jiaojunwei.github.io/post/guide/</guid>
+      <description>&lt;h1 id=&#34;guides&#34;&gt;Guides&lt;/h1&gt;
+
+&lt;h2 id=&#34;content-editing&#34;&gt;Content Editing&lt;/h2&gt;
+
+&lt;h3 id=&#34;add-image-to-article&#34;&gt;Add image to article&lt;/h3&gt;
+
+&lt;p&gt;This is an AMP page, to add image, you have to use &lt;a href=&#34;https://github.com/huyb1991/hugo-lamp/blob/master/layouts/shortcodes/amp-img.html&#34;&gt;amp-img shortcodes&lt;/a&gt;, the syntax is:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&lt;amp-img
+  src=&#34;image-url&#34;
+  alt=&#34;image alt &#34;
+  
+  
+  width=&#34;width-value&#34;
+  height=&#34;height-value&#34;
+  layout=&#34;responsive&#34;&gt;
+&lt;/amp-img&gt;
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Replace &lt;code&gt;width-value&lt;/code&gt;, &lt;code&gt;height-value&lt;/code&gt;, &lt;code&gt;image alt&lt;/code&gt; and &lt;code&gt;image-url&lt;/code&gt; by your image.&lt;/p&gt;
+
+&lt;p&gt;Note: Hugo is static-site-generator, to add image to your site, please follow this solution &lt;a href=&#34;https://discourse.gohugo.io/t/solved-how-to-insert-image-in-my-post/1473&#34;&gt;[SOlved] How to… insert image in my post?&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;content-config-for-seo&#34;&gt;Content config for SEO&lt;/h3&gt;
+
+&lt;p&gt;In Front Matter section for each post, you should add &lt;code&gt;title&lt;/code&gt; and &lt;code&gt;description&lt;/code&gt; for SEO, example:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;---
+title: &amp;quot;Getting Started with AMP&amp;quot;
+description: &amp;quot;Getting started with AMP. Implement these key steps to get up and running with AMP&amp;quot;
+---
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The &lt;code&gt;title&lt;/code&gt; is the H1 tag on HTML page, and &lt;code&gt;&amp;lt;title&amp;gt;&lt;/code&gt; in head section.&lt;/p&gt;
+
+&lt;p&gt;The &lt;code&gt;description&lt;/code&gt; is the meta tag for description &lt;code&gt;&amp;lt;meta name=&amp;quot;description&amp;quot; content=&amp;quot;&amp;quot;&amp;gt;&lt;/code&gt; in head section.&lt;/p&gt;
+
+&lt;h3 id=&#34;add-icon&#34;&gt;Add icon&lt;/h3&gt;
+
+&lt;p&gt;I changed from icon font to SVG for website follow &lt;a href=&#34;https://css-tricks.com/svg-symbol-good-choice-icons/&#34;&gt;SVG symbol a Good Choice for Icons&lt;/a&gt;. Here&amp;rsquo;s steps to add SVG icon to website.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Get SVG code (Eg: &lt;a href=&#34;https://iconsvg.xyz/&#34;&gt;https://iconsvg.xyz/&lt;/a&gt; or &lt;a href=&#34;https://simpleicons.org/&#34;&gt;https://simpleicons.org/&lt;/a&gt;)&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;svg xmlns=&amp;quot;http://www.w3.org/2000/svg&amp;quot; style=&amp;quot;display: none;&amp;quot; preserveAspectRatio=&amp;quot;xMidYMid meet&amp;quot;&amp;gt;
+&amp;lt;symbol id=&amp;quot;icon-rss&amp;quot; viewBox=&amp;quot;0 0 24 24&amp;quot;&amp;gt;
+&amp;lt;title&amp;gt;RSS&amp;lt;/title&amp;gt;
+&amp;lt;path d=&amp;quot;M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z&amp;quot; /&amp;gt;
+&amp;lt;/symbol&amp;gt;
+&amp;lt;/svg&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Replace &lt;code&gt;SVG symbol id&lt;/code&gt; by yourself (above is &lt;code&gt;icon-rss&lt;/code&gt;)&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Add this code into &lt;a href=&#34;https://github.com/huyb1991/hugo-lamp/blob/master/layouts/partials/svg-icons.html&#34;&gt;layouts/partials/svg-icons.html&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Call icon name by &lt;code&gt;SVG symbol id&lt;/code&gt; at you define above follow this syntax:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;svg fill=&amp;quot;currentColor&amp;quot;&amp;gt;&amp;lt;use xlink:href=&amp;quot;#icon-rss&amp;quot; /&amp;gt;&amp;lt;/svg&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Example for icon on &lt;a href=&#34;https://github.com/huyb1991/hugo-lamp/blob/master/layouts/partials/social.html&#34;&gt;layouts/partials/social.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;customize-theme&#34;&gt;Customize Theme&lt;/h3&gt;
+
+&lt;p&gt;Use &lt;a href=&#34;https://yarnpkg.com/en/&#34;&gt;yarn&lt;/a&gt; to install and run script instead of &lt;code&gt;npm&lt;/code&gt;, some people got problem when using &lt;code&gt;npm&lt;/code&gt; (but not with &lt;code&gt;yarn&lt;/code&gt;)&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Install packages by &lt;code&gt;yarn install&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Run watch script to hot reload your change &lt;code&gt;yarn watch&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&#34;site-configuration&#34;&gt;Site Configuration&lt;/h2&gt;
+
+&lt;p&gt;Take a look at &lt;a href=&#34;https://github.com/huyb1991/hugo-lamp/blob/master/exampleSite/config.toml&#34;&gt;exampleSite - config.toml&lt;/a&gt;, and replace config value by your own:&lt;/p&gt;
+
+&lt;h3 id=&#34;site-info&#34;&gt;Site Info&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-toml&#34;&gt;# Base config for your site
+baseURL = &amp;quot;http://localhost:1313/&amp;quot;      # Your domain
+languageCode = &amp;quot;en-us&amp;quot;
+title = &amp;quot;Hugo LAMP&amp;quot;                     # Default site title
+theme = &amp;quot;hugo-lamp&amp;quot;
+googleAnalytics = &amp;quot;UA-XXXXXXXX-X&amp;quot;       # Google Analytics UA number
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;main-menu&#34;&gt;Main Menu&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-toml&#34;&gt;[[menu.main]]
+  name = &amp;quot;Hugo&amp;quot;
+  weight = 1
+  identifier = &amp;quot;hugo&amp;quot;
+  url = &amp;quot;/hugo/&amp;quot;
+[[menu.main]]
+  name = &amp;quot;AMP Project&amp;quot;
+  weight = 2
+  identifier = &amp;quot;amp&amp;quot;
+  url = &amp;quot;/amp/&amp;quot;
+[[menu.main]]
+  name = &amp;quot;Tags&amp;quot;
+  weight = 3
+  identifier = &amp;quot;tags&amp;quot;
+  url = &amp;quot;/tags/&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;taxonomies&#34;&gt;Taxonomies&lt;/h3&gt;
+
+&lt;p&gt;For more details, take a look on official document for &lt;a href=&#34;https://gohugo.io/content-management/taxonomies/&#34;&gt;taxonomies&lt;/a&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-toml&#34;&gt;[taxonomies]
+  tag = &amp;quot;tags&amp;quot;
+  category = &amp;quot;categories&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;seo&#34;&gt;SEO&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-toml&#34;&gt;[params]
+  subtitle = &amp;quot;Light responsive AMP theme&amp;quot;
+  author = &amp;quot;Huy Nguyen&amp;quot;                     # Your name
+  logo = &amp;quot;/img/avatar.jpg&amp;quot;                  # Logo
+  description = &amp;quot;A light responsive Hugo AMP theme for blogger&amp;quot;          # Meta description tag
+  paginate = 10
+
+  # SEO configs
+  seotitle = &amp;quot;Hugo Blog Title (SEO Version)&amp;quot;                  # Overwrite site title for SEO purpose
+  googleSiteVerification = &amp;quot;google_site_verification_code&amp;quot;    # Google Webmaster
+  msValidate = &amp;quot;bing_site_verification_code&amp;quot;                  # Bing Webmaster
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;publisher&#34;&gt;Publisher&lt;/h3&gt;
+
+&lt;p&gt;Currently only support Google Adsense as usual, maybe implement &lt;a href=&#34;https://www.ampproject.org/docs/reference/components/amp-auto-ads&#34;&gt;amp-auto-ads&lt;/a&gt; for future.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-toml&#34;&gt;  # Google Adsense
+  adsensePublisher = &amp;quot;ca-pub-XXX&amp;quot;       # Required if you want to include Google Adsense
+  adsenseSlot = &amp;quot;XXX&amp;quot;                   # Required slot to display ads
+  adsenseSlotSticky = &amp;quot;XXX&amp;quot;             # Enables sticky ads feature, value maybe the same with adsenseSlot, remove if you don&#39;t want display sticky ads
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;social-networks-connections&#34;&gt;Social Networks &amp;amp; Connections&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-toml&#34;&gt;  # Social networks
+  email = &amp;quot;name@domain.com&amp;quot;
+  github = &amp;quot;github_username&amp;quot;
+  twitter = &amp;quot;twitter_username&amp;quot;
+  linkedin = &amp;quot;linkedin_username&amp;quot;
+  facebook = &amp;quot;facebook_username&amp;quot;
+  google = &amp;quot;googleplus_id_number&amp;quot;
+  instagram = &amp;quot;instagram_username&amp;quot;
+  youtube = &amp;quot;youtube_username&amp;quot;
+  dribbble = &amp;quot;dribbble_username&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+    
+    <item>
+      <title>Hello World</title>
+      <link>https://jiaojunwei.github.io/post/hello-world/</link>
+      <pubDate>Thu, 28 Mar 2019 18:49:55 +0800</pubDate>
+      
+      <guid>https://jiaojunwei.github.io/post/hello-world/</guid>
+      <description>&lt;p&gt;Cut out summary from your post content here.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>My First Post</title>
-      <link>http://example.org/post/my-first-post/</link>
+      <link>https://jiaojunwei.github.io/post/my-first-post/</link>
       <pubDate>Thu, 28 Mar 2019 16:34:59 +0800</pubDate>
       
-      <guid>http://example.org/post/my-first-post/</guid>
+      <guid>https://jiaojunwei.github.io/post/my-first-post/</guid>
       <description></description>
     </item>
     

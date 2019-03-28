@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on JiaoJunWei&#39;s BLOG</title>
-    <link>https://jiaojunwei.github.io/post/</link>
-    <description>Recent content in Posts on JiaoJunWei&#39;s BLOG</description>
+    <title>Tagb on JiaoJunWei&#39;s BLOG</title>
+    <link>https://jiaojunwei.github.io/tags/tagb/</link>
+    <description>Recent content in Tagb on JiaoJunWei&#39;s BLOG</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Thu, 28 Mar 2019 18:49:55 +0800</lastBuildDate>
     
-	<atom:link href="https://jiaojunwei.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://jiaojunwei.github.io/tags/tagb/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -180,15 +180,6 @@ googleAnalytics = &amp;quot;UA-XXXXXXXX-X&amp;quot;       # Google Analytics UA 
       
       <guid>https://jiaojunwei.github.io/post/hello-world/</guid>
       <description>&lt;p&gt;Cut out summary from your post content here.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>My First Post</title>
-      <link>https://jiaojunwei.github.io/post/my-first-post/</link>
-      <pubDate>Thu, 28 Mar 2019 16:34:59 +0800</pubDate>
-      
-      <guid>https://jiaojunwei.github.io/post/my-first-post/</guid>
-      <description></description>
     </item>
     
   </channel>
