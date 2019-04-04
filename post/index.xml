@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on JiaoJunWei&#39;s BLOG</title>
+    <title>Posts on JiaoJunWei</title>
     <link>https://jiaojunwei.github.io/post/</link>
-    <description>Recent content in Posts on JiaoJunWei&#39;s BLOG</description>
+    <description>Recent content in Posts on JiaoJunWei</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Thu, 28 Mar 2019 18:49:55 +0800</lastBuildDate>
@@ -25,16 +25,7 @@
 
 &lt;p&gt;This is an AMP page, to add image, you have to use &lt;a href=&#34;https://github.com/huyb1991/hugo-lamp/blob/master/layouts/shortcodes/amp-img.html&#34;&gt;amp-img shortcodes&lt;/a&gt;, the syntax is:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;&lt;amp-img
-  src=&#34;image-url&#34;
-  alt=&#34;image alt &#34;
-  
-  
-  width=&#34;width-value&#34;
-  height=&#34;height-value&#34;
-  layout=&#34;responsive&#34;&gt;
-&lt;/amp-img&gt;
-
+&lt;pre&gt;&lt;code&gt;{{&amp;lt; amp-img width=&amp;quot;width-value&amp;quot; height=&amp;quot;height-value&amp;quot; layout=&amp;quot;responsive&amp;quot; src=&amp;quot;image-url&amp;quot; alt=&amp;quot;image alt&amp;quot; &amp;gt;}}
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Replace &lt;code&gt;width-value&lt;/code&gt;, &lt;code&gt;height-value&lt;/code&gt;, &lt;code&gt;image alt&lt;/code&gt; and &lt;code&gt;image-url&lt;/code&gt; by your image.&lt;/p&gt;
@@ -170,7 +161,9 @@ googleAnalytics = &amp;quot;UA-XXXXXXXX-X&amp;quot;       # Google Analytics UA 
   instagram = &amp;quot;instagram_username&amp;quot;
   youtube = &amp;quot;youtube_username&amp;quot;
   dribbble = &amp;quot;dribbble_username&amp;quot;
-&lt;/code&gt;&lt;/pre&gt;</description>
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -179,16 +172,11 @@ googleAnalytics = &amp;quot;UA-XXXXXXXX-X&amp;quot;       # Google Analytics UA 
       <pubDate>Thu, 28 Mar 2019 18:49:55 +0800</pubDate>
       
       <guid>https://jiaojunwei.github.io/post/hello-world/</guid>
-      <description>&lt;p&gt;Cut out summary from your post content here.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>My First Post</title>
-      <link>https://jiaojunwei.github.io/post/my-first-post/</link>
-      <pubDate>Thu, 28 Mar 2019 16:34:59 +0800</pubDate>
-      
-      <guid>https://jiaojunwei.github.io/post/my-first-post/</guid>
-      <description></description>
+      <description>&lt;p&gt;我的第一篇博客，记录该博客的搭建。&lt;/p&gt;
+
+&lt;p&gt;前提是要按装git&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

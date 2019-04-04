@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hugo on JiaoJunWei</title>
+    <link>https://jiaojunwei.github.io/tags/hugo/</link>
+    <description>Recent content in Hugo on JiaoJunWei</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 28 Mar 2019 18:49:55 +0800</lastBuildDate>
+    
+	<atom:link href="https://jiaojunwei.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Hello World</title>
+      <link>https://jiaojunwei.github.io/post/hello-world/</link>
+      <pubDate>Thu, 28 Mar 2019 18:49:55 +0800</pubDate>
+      
+      <guid>https://jiaojunwei.github.io/post/hello-world/</guid>
+      <description>&lt;p&gt;我的第一篇博客，记录该博客的搭建。&lt;/p&gt;
+
+&lt;p&gt;前提是要按装git&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
