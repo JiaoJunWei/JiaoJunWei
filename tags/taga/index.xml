@@ -25,7 +25,16 @@
 
 &lt;p&gt;This is an AMP page, to add image, you have to use &lt;a href=&#34;https://github.com/huyb1991/hugo-lamp/blob/master/layouts/shortcodes/amp-img.html&#34;&gt;amp-img shortcodes&lt;/a&gt;, the syntax is:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;{{&amp;lt; amp-img width=&amp;quot;width-value&amp;quot; height=&amp;quot;height-value&amp;quot; layout=&amp;quot;responsive&amp;quot; src=&amp;quot;image-url&amp;quot; alt=&amp;quot;image alt&amp;quot; &amp;gt;}}
+&lt;pre&gt;&lt;code&gt;&lt;amp-img
+  src=&#34;image-url&#34;
+  alt=&#34;image alt &#34;
+  
+  
+  width=&#34;width-value&#34;
+  height=&#34;height-value&#34;
+  layout=&#34;responsive&#34;&gt;
+&lt;/amp-img&gt;
+
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Replace &lt;code&gt;width-value&lt;/code&gt;, &lt;code&gt;height-value&lt;/code&gt;, &lt;code&gt;image alt&lt;/code&gt; and &lt;code&gt;image-url&lt;/code&gt; by your image.&lt;/p&gt;
@@ -161,9 +170,7 @@ googleAnalytics = &amp;quot;UA-XXXXXXXX-X&amp;quot;       # Google Analytics UA 
   instagram = &amp;quot;instagram_username&amp;quot;
   youtube = &amp;quot;youtube_username&amp;quot;
   dribbble = &amp;quot;dribbble_username&amp;quot;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
     
   </channel>
